@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, height=device-height, initial-scale=1.0, maximum-scale=2.0, minimum-scale=1.0, user-scalable=yes" />
+    <title>유정복</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="main.css">
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script>
+(function($) {
+'use strict';
+
+$(function(jQuery) {
+var $adverb = $('.adverb'),
+$adverbText = $adverb.find('.adverb__text'),
+duration = 1000,
+delay = 3000,
+isFirst = true;
+
+function resize(element) {
+var width = $(element).width();
+
+if(!isFirst) {
+$adverb.animate({
+width : width
+}, duration);
+}else{
+$adverb.width(width);
+
+isFirst = false;
+}
+}
+
+function i(element) {
+resize(element);
+
+$(element).addClass('in');
+
+setTimeout(function() {
+o(element);
+
+var $next = $(element).next();
+
+if(!$next.length) {
+$next = $adverb.children(':first-child');
+}
+
+i($next);
+}, delay);
+}
+
+function o(element) {
+$(element).removeClass('in first').addClass('out');
+
+setTimeout(function() {
+change();
+}, delay);
+}
+
+function change() {
+$adverb.find('.adverb__text').eq($adverbText.length - 1).after($('.out').detach());
+
+$adverb.find('.adverb__text').removeClass('out');
+}
+
+i($adverbText[0]);
+});
+})(jQuery);
+
+function scrolltoPosition() {
+    const locationSection = document.querySelector(".sponsor").offsetTop;
+    window.scrollTo({top:locationSection, behavior:"smooth" });
+}
+
+</script>
+</head>
+
+<body>
+    <div class="wrapper">
+        <header class="main">
+            <div class="mainnav">
+                <a href="https://유정복.com" class="mainlogo"><img src="img/KakaoTalk_20220420_165331807.png" alt="정복캠프-인천시장 후보 유정복"><h1 class="mainname">유정복</h1></a>
+                <div class="mainright">
+                    <div class="logocontainer">
+                        <a href="https://www.facebook.com/truly4ever" target="_blank" title="새창"><img src="img/logo1.png" alt="페이스북"></a>
+                        <a href="https://www.instagram.com/you_love_incheon/" target="_blank" title="새창"><img src="img/logo2.png" alt="인스타그램"></a>
+                        <a href="https://www.youtube.com/channel/UC-g3xCxbvryasd-rI-fiKsQ" target="_blank" title="새창"><img src="img/logo3.png" alt="유튜브"></a>
+                        <a href="https://blog.naver.com/btsiu2" target="_blank" title="새창"><img src="img/logo4.png" alt="네이버 블로그"></a>
+                    </div>
+                    <div class="mainbutton" onclick="scrolltoPosition()">후원하기</div>
+                </div>
+                </div> 
+            <div class="flex-container">
+                <p class="desc descin">인천의 미래, 유정복과 함께 <br><span class="adverb"><span class="adverb__text first">시장은 정복</span><span class="adverb__text">시민은 행복</span><span class="adverb__text">인천은 축복</span></span></p>
+            </div>
+        </header> 
+        <div class="mainimg">
+            <div><img src="img/imgfile/공약선거.jpg" alt=""></div>
+            <div><img src="img/imgfile/공약1.jpg" alt=""></div>
+            <div><img src="img/imgfile/공약시안2-1.jpg" alt=""></div>
+            <div><img src="img/imgfile/KakaoTalk_Photo_2022-05-10-15-21-17.jpeg" alt=""></div>
+            <div><img src="img/imgfile/공약4.jpg" alt=""></div>
+            <div><img src="img/imgfile/공약5.jpg" alt=""></div>
+        </div>
+
+        <section class="promise">
+            <!--버튼 임시용
+            <div class="buttoncontainer">
+                <button class="buttonright" type="button"><img src="img/buttonleft.png" alt="다음"></button>
+                <button class="buttonleft" type="button"><img src="img/buttonright.png" alt="이전"></button>
+            </div>-->
+            <div class="promisecontainer">
+                <img src="img/1.png" alt="">
+                <h2 class="promisetitle">지역균형발전 프로젝트</h2>
+                <div class="promiseconten_container">
+                    <div class="promisecontent"><img src="img/number/1.png" alt="1">동서/남북으로 인천을 단절시킨 경인전철&middot;경인고속도로&middot;인천대로 지하화를 통해 하나로 연결</div>
+                    <div class="promisecontent"><img src="img/number/2.png" alt="2">인천에서 전국 어디로나 사통팔달, 입체 교통망 구축<span class="bluecolor">인천발 KTX 조기 개통, 수도권광역철도 GTX-B, D, E, 인천도시철도 <span class="bluecolor">3호선을 통한 인천 내 대순환철도 추진</span></span></div>
+                    <div class="promisecontent"><img src="img/number/3.png" alt="3">도시재생사업 등 원도심 활성화를 위한 획기적 정책추진 <span>주차장&middot;편의시설&middot;복지시설</span></div>
+                    <div class="promisecontent"><img src="img/number/4.png" alt="4">뉴홍콩시티 건설 <span>(영종&middot;강화중심,송도&middot;청라연계)</span></div>
+                    <div class="promisecontent"><img src="img/number/5.png" alt="5">인천의 근대화를 연 인천내항 주변을 원도심의 미래로 <span>재탄생, 인천내항 하버시티 건설</span></div>
+                    <div class="promisecontent"><img src="img/number/6.png" alt="6">바다를 활용한 복합공간 조성<span class="bluecolor">송도 워터프런트, 경인아라뱃길 스포츠 복합단지 등</span></div>
+                </div>    
+            </div>
+            <div class="promisecontainer_2">
+                <img src="img/2.png" alt="">
+                <h2 class="promisetitle">계층 균형발전 프로젝트</h2>
+                <div class="promisecontent_container">
+                   <div class="promisecontent2"><img src="img/number/1.png" alt="1">자영업자&middot;소상공인&middot;중소기업에 대한 과감한 지원 확대<span class="bluecolor">공제조합설립, 경영지원센터설립, 이음카드 획기적 운영</span></div>
+                   <div class="promisecontent2"><img src="img/number/2.png" alt="2">사회적 약자에 대한 감동정책 실현<span class="bluecolor">장애인 이동권 보장, 다문화&middot;한부모가정, 탈북자, 보훈가족<span class="bluecolor"> 복지실현, 시민안심제도 확대 시행</span></span></div>
+                   <div class="promisecontent2"><img src="img/number/3.png" alt="3">상생&middot;화합하는 사회조성<span class="bluecolor">간병인, 경비원, 자원봉사자 처우개선 강화</span></div>
+                   <div class="promisecontent2"><img src="img/number/4.png" alt="4">대한민국 지킴이 헌신봉사 예우확대<span class="bluecolor">소방공무원, 경찰, 군인 및 사회봉사단체 등</span></div>
+                   <div class="promisecontent2"><img src="img/number/5.png" alt="5">농어민정책<span class="bluecolor">연안여객선 완전공영체, 옹진&middot;강화지역 도시가스 공급확대</span></div>
+                </div>    
+            </div>
+            <div class="promisecontainer_3">
+                <img src="img/3.png" alt="">
+                <h2 class="promisetitle">세대간 상생발전 프로젝트</h2>
+                <div class="promisecontent_container_2">
+                  <div class="promisecontnentright">
+                      <div class="promisecontent3">여성<br><span class="bluecolor">경력보유 여성의 재취업 강화, 맞춤형 취업지원확대, 취업지원금지원/여성이 안전한 안심드림 인천</span></div>
+                      <div class="promisecontent3">영유아<br><span class="bluecolor">임신부 인천愛 100원 택시 도입, 출산 축하지원금 1000만원 인상지원, 부모 급여 도입, 산모&middot;태아&middot;영유아 건강 돌봄 서비스 확대</span></div>
+                      <div class="promisecontent3">어린이<br><span class="bluecolor">어린이 생존수영 교육, 맞벌이자녀 야간 안심 케어 아이 돌봄 서비스 강화</span></div>
+                      <div class="promisecontent3">청소년<br><span class="bluecolor">인천소재 UN국제기구와 연계 프로그램 설치, 운영, 취약계층 청소년 '희망 사다리' 사업 전개</span></div>
+                  </div>
+                  <div class="promisecontentleft">
+                      <div class="promisecontent3">청년<br><span class="bluecolor">10만 청년 CEO 육성, 청년 해외진출 기지 조성, 인천형 창업벨트 구축, 인천청년공간 '유유기지' 확대, '1석 5조 인천사랑프로젝트 일자리 만들기'</span></div>
+                      <div class="promisecontent3">어르신<br><span class="bluecolor">65세 이상 '어르신 버스 무료화', 영속성 있고 내실 있는 어르신 일자리 확대</span></div>
+                      <div class="promisecontent3">보훈가족<br><span class="bluecolor">호국보훈의 도시에 걸맞는 유공예우 시책 마련, 수당 확대</span></div>
+                  </div>
+                </div>    
+            </div>
+        </section>
+
+        <section class="subsection">
+            <div class="letter">
+                <img src="img/G10_0092.png" class="img1" alt="유정복 사진">
+                <img src="img/picture.JPG" class="img2" alt="">
+                <div class="letterright"><span class="title1">시민 여러분,</span> <br> 인천을 초일류도시로 만들겠다는 제 비전은<span>단단하고 견고합니다.</span><span>인천을 인천답게, 300만 시민의 위상을 세계위로</span><span>드높이겠습니다.</span><br>
+                    오직 인천만 보며, 오직 시민만 생각하며<span>담대히 나아가겠습니다.</span><span>잃어버린 4년을 되찾고, 지방정권 창출의</span><span>위업을 반드시 이루겠습니다.</span><br>윤석열 정부를 완성시키고,<span>성공의 주춧돌이 되겠습니다.</span>
+                    <span>중앙과 긴밀히 소통해, 인천 골목 구석구석</span><span>행복이 닿게 하겠습니다.</span><br>"세계 초일류도시, 인천"<br>유정복이 말하면 현실이 됩니다.
+
+                </div>
+            </div>
+            <iframe width="1000" height="555" src="https://www.youtube.com/embed/npZdwh7FPSA" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen title="4월 22일 유정복 인천광역시장 단체장 경선 결과 본선 확정"></iframe>
+        </section>
+
+        <section class="sponsor">
+            <img src="img/all.png" alt="단체사진">
+            <address class="sponsorcontent">
+                <h2>유정복 후원회</h2>
+                <div class="address">
+                - 후원계좌 : 농협은행 301-0308-4832-71 <br>
+                - 연락처 : <a href="tel:010-5859-5005">010-5859-5005</a> <br>
+                - 문의 : <a href="mailto:032yoo@gmail.com">032yoo@gmail.com</a>
+                </div><br>
+                <div class="sponsorsub">
+                입금 시 성명, 연락처를 상기 연락처로 꼭 문자남겨주시기 바랍니다.<br>
+                연간 500만원까지 후원이 가능하며
+                연말정산시 10만원까지 세액공제, 10만원 초과분은
+                소득공제가 가능합니다. <br>
+                단, 법인은 후원이 불가능하며 개인 명의 후원만 가능합니다.
+                </div>
+            </address>
+        </section>
+
+       
+    </div>
+
+
+
+          
+
+				
+</body>
+</html>

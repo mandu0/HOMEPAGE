@@ -1,0 +1,1185 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.wrapper{
+    width: 1920px;
+    height: 100%;
+    overflow: hidden;
+	margin: 0 auto;
+}
+
+.main{
+    max-width: 100%;
+    height: 970px;
+    background-image: url(img/KakaoTalk_20220420_164001971.jpg);
+    background-clip: content-box;
+    background-size: auto;
+    position: relative;
+}
+
+.mainnav{
+    width: 80%;
+    height: 120px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.mainlogo img{
+    width: 200px;
+}
+
+.mainname{
+    display: none;
+}
+
+.mainbutton{
+    width: 160px;
+    height: 40px;
+    border: 1px solid white;
+    border-radius: 2em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 20px;
+    position: relative;
+    z-index: 999;
+    margin-left: 20px;
+}
+
+.mainbutton:hover{
+    background-color: white;
+    opacity: 70%;
+}
+
+.mainbutton a{
+    text-decoration: none;
+    color: white;
+    transition-duration: 1s;
+}
+
+.mainbutton a:hover{
+    color: black;
+    transition-duration: 0.5s;
+    font-weight: 900;
+
+}
+
+.flex-container {
+    display:flex; 
+    height:100%;
+    align-items:center; 
+    position: relative;
+    left: 200px;
+    top: -150px;
+}
+
+.descin{
+    width: 100%;
+    font-size:45px; 
+    font-weight:500; 
+    color:#fff; 
+    line-height:32px;
+}
+
+.adverb {
+    display:inline-block;
+    overflow:visible !important;
+    position:relative; 
+    top: 35px;
+    font-size:100px; 
+    font-weight:600;
+    color: #fff; 
+    line-height:32px; 
+}
+.adverb__text {
+    opacity:0; 
+    transform:translateY(-10px); 
+    position:absolute; 
+    white-space:nowrap; 
+    transition-property:opacity, transform; 
+    transition-duration:1000ms; 
+    transition-timing-function:ease-in-out;
+}
+.adverb__text.in {
+    opacity:1; 
+    transform:translateY(0);
+}
+.adverb__text.first {
+    transition-property:none;
+}
+
+.promisecontainer{
+    width: 75%;
+    height: auto;
+    position: relative;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 30px;
+    font-family: 'Noto Sans KR', sans-serif;
+}
+
+.promisecontainer h2{
+    width: 100%;
+    padding-top: 100px;  
+    text-align: center;  
+    font-size: 90px;
+    padding-bottom: 70px;
+}
+
+.buttoncontainer{
+    width: 85%;
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+    margin-left: auto;
+    margin-right: auto;
+    top: 700px;
+}
+
+.buttonright{
+    border: none;
+    background-color: #fff;
+}
+
+.buttonleft{
+    border: none;
+    background-color: #fff;
+}
+
+.promisetitle{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    margin-top: 30px;
+}
+
+.promisecontainer>img{
+    width: 40%;
+    height: auto;
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    margin-right: 80px;
+}
+
+.promisecontent_container{
+    width: 90%;
+    height: auto;
+    margin-top: 60px;
+}
+
+.promisecontent{
+    font-size: 28px;
+    position: relative;
+    left: 180px;
+    margin-top: -20px;
+}
+.promisecontent2{
+    font-size: 30px;
+    position: relative;
+    left: 170px;
+    margin-top: -10px;
+}
+
+.promisecontent2 span{
+    display: block;
+}
+.promisecontent span{
+    display: block;
+    line-height: 30px;
+}
+
+.bluecolor{
+    color: #4faac5;
+    font-size: 20px;
+    line-height: 30px;
+}
+
+.promisecontainer_2{
+    width: 80%;
+    height: auto;
+    position: relative;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 30px;
+    font-family: 'Noto Sans KR', sans-serif;
+}
+
+.promisecontainer_2 h2{
+    padding-top: 100px;  
+    text-align: center;  
+    font-size: 90px;
+    padding-bottom: 20px;
+}
+
+.promisecontainer_2 img{
+    width: 60%;
+    height: auto;
+    position: absolute;
+    right: -110px;
+    bottom: -30px;
+}
+
+.promisecontainer_3{
+    width: 80%;
+    height: auto;
+    position: relative;
+    margin-left: auto;
+    margin-right: auto;
+    font-family: 'Noto Sans KR', sans-serif;
+}
+
+.promisecontainer_3 h2{
+    padding-top: 100px;  
+    text-align: center;  
+    font-size: 90px;
+}
+
+.promisecontainer_3 img{
+    width: 40%;
+    height: auto;
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    right: 70px;
+}
+
+.promisecontent_container_2{
+    width: 50%;
+    height: auto;
+    margin-top: 70px;
+    padding-bottom: 50px;
+    display: flex;
+    margin-left: 180px;
+}
+
+.promisecontentleft{
+    margin-left: 60px;
+}
+
+.promisecontentleft>.promisecontent3{
+    margin-bottom: 45px;
+}
+
+.promisecontent:first-child img{
+    display: block;
+    width: 60px;
+    position: relative;
+    left: -90px;
+    top: 68px;
+}
+
+.promisecontent:nth-child(2) img{
+    display: block;
+    width: 60px;
+    position: relative;
+    left: -90px;
+    top: 68px;
+}
+
+.promisecontent:nth-child(3) img{
+    display: block;
+    width: 60px;
+    position: relative;
+    left: -90px;
+    top: 68px;
+}
+
+.promisecontent:nth-child(4) img{
+    display: block;
+    width: 60px;
+    position: relative;
+    left: -90px;
+    top: 68px;
+}
+
+.promisecontent:nth-child(5) img{
+    display: block;
+    width: 60px;
+    position: relative;
+    left: -90px;
+    top: 68px;
+}
+
+.promisecontent:nth-child(6) img{
+    display: block;
+    width: 60px;
+    position: relative;
+    left: -90px;
+    top: 68px;
+}
+
+.promisecontent2 img{
+    display: block;
+    width: 60px;
+    position: relative;
+    left: -90px;
+    top: 68px;
+}
+
+.promisecontent3{
+    font-size: 30px;
+    position: relative;
+    margin-top: 30px;
+    line-height: 35px;
+}
+
+.mainright{
+    width: 500px;
+    display: flex;
+}
+
+.logocontainer img{
+    margin-right: 30px;
+    width: 40px;
+}
+
+.logocontainer{
+    width: 100%;
+    position: relative;
+    z-index: 9999;
+    left: 20px;
+}
+
+.logocontainer a:first-child:hover{
+    filter: drop-shadow(0px 0px 10px #4375F4);
+    transition: 0.5s;
+}
+
+.logocontainer a:nth-child(2):hover{
+    filter: drop-shadow(0px 0px 10px #F03578);
+    transition: 0.5s;
+}
+
+.logocontainer a:nth-child(3):hover{
+    filter: drop-shadow(0px 0px 10px #FF0101);
+    transition: 0.5s;
+}
+
+.logocontainer a:nth-child(4):hover{
+    filter: drop-shadow(0px 0px 10px #1FE556);
+    transition: 0.5s;
+}
+
+.subsection iframe{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 200px;
+}
+
+
+.subsection{
+    position: relative;
+    margin-top: 100px;
+}
+
+.letter{
+    max-width: 80%;
+    height:1030px;
+    position: relative;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 100px;
+    overflow: hidden;
+}
+
+.letter>img{
+    max-width: 100%;
+    box-sizing: border-box;
+}
+.img2{
+    display: none;
+}
+.letterright span{
+    display: block;
+}
+
+.letterright{
+    height: 900px;
+    position: relative;
+    top: -800px;
+    left: 400px;
+    font-size: 1.4rem;
+    text-align: center;
+    line-height: 1.4em;
+    font-weight: 500;
+    font-family: 'Noto Sans KR', sans-serif;
+    font-weight: 700;
+}
+
+.title1{
+    font-size: 2.2em;
+    font-weight: 700;
+    font-family: serif;
+}
+
+.letterright img{
+    max-width: 20%;
+    position: relative;
+    top: 30px;
+}
+
+
+.sponsor{
+    max-width: 100%;
+    height: 350px;
+    background-color: #cd2a2a;
+    margin-top: 250px;
+    display: flex;
+    align-items: center;
+    position: relative;
+    font-family: 'Noto Sans KR', sans-serif;
+}
+
+.sponsorcontent{
+    color: aliceblue;
+    font-style: normal;
+    position: relative;
+}
+
+.sponsorcontent h2{
+    font-size: 2.2rem;
+    margin-bottom: 30px;
+}
+
+.address a{
+    text-decoration: none;
+    color: aliceblue;
+}
+
+.address{
+    font-size: 1.2em;
+}
+
+.sponsor img{
+    max-width: 60%;
+    position: relative;
+    left: 60px;
+    bottom: 130px;
+}
+
+.mainimg{
+    width: 100%;
+    margin-top: 100px;
+}
+
+.mainimg img{
+    max-width: 80%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 40px;
+    padding-bottom: 40px;
+}
+.noneimg{
+    display: none;
+}
+@media(max-width:414px){
+.noneimg{
+    display: block;
+    width: 15%;
+    position: fixed;
+    top: 60px;
+    left: 10px;
+    z-index: 999;
+}
+.noneimg img{
+     width: 100%;
+}
+    .wrapper{
+        width: 100%;
+        height: auto;
+        overflow: hidden;
+    }
+    .main{
+        max-width:100%;
+        height: 820px;
+        background-image: url(img/background1.jpg);
+        background-size: 100% auto;
+    }
+    .mainnav{
+        width: 100%;
+        height: auto; 
+        flex-direction: column;
+        align-items: flex-start;
+        position: relative;
+    }
+    .mainlogo img{
+        width: 100px;
+        margin-top: 20px;
+        margin-left: 10px;
+    }
+    .mainbutton{
+        width: 20%;
+        height: 25px;
+        position: relative;
+        top: -34px;
+        right: 0px;
+        left: 260px;
+        font-size: 12px;
+    }
+    .logocontainer{
+        width: 100%;
+        background-color: #cd2a2a;
+        position: fixed;
+        bottom: 0px;
+        left: 0px;
+        display: flex;
+        justify-content: space-around;
+    }
+    .logocontainer img{
+        width: 40px;
+        margin: 20px;
+    }
+    .flex-container{
+        position: relative;
+        left: 0px;
+        text-align: center;
+    }
+    .descin{
+        width: 100%;
+        font-size: 30px;
+        position: relative;
+        margin-left: auto;
+        margin-right: auto;
+        top: -100px;
+    }
+
+    .adverb{
+        font-size: 40px;
+        position: relative;
+        right: 100px;
+        top: -10px;
+    }
+    
+    .promisecontainer h2{
+        padding-top: 100px;  
+        text-align: center;  
+        font-size: 30px;
+        padding-bottom: 30px;
+    }
+    .promisecontent_container{
+        width: 100%;
+        margin-top: 0px;
+    }
+    .promisecontent{
+        font-size: 16px;
+        position: relative;
+        left: 10px;
+        margin-top: -10px;
+    }
+    .promisecontainer>img{
+        display: none;
+    }
+    .promisecontent:first-child img{
+        display: block;
+        width: 30px;
+        position: relative;
+        left: -40px;
+        top: 35px;
+    }
+    .promisecontent:nth-child(2) img{
+        display: block;
+        width: 30px;
+        position: relative;
+        left: -40px;
+        top: 35px;
+    }
+    .promisecontent:nth-child(3) img{
+        display: block;
+        width: 30px;
+        position: relative;
+        left: -40px;
+        top: 35px;
+    }
+    .promisecontent:nth-child(4) img{
+        display: block;
+        width: 30px;
+        position: relative;
+        left: -40px;
+        top: 35px;
+    }
+    .promisecontent:nth-child(5) img{
+        display: block;
+        width: 30px;
+        position: relative;
+        left: -40px;
+        top: 35px;
+    }.promisecontent:nth-child(6) img{
+        display: block;
+        width: 30px;
+        position: relative;
+        left: -40px;
+        top: 35px;
+    }
+    .promisecontent span{
+        display: block;
+        line-height: 16px;
+    }
+    .promisecontainer_2{
+        width: 100%;
+        height: auto;
+        position: relative;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 30px;
+    }
+    .promisecontainer_2 h2{
+        padding-top: 30px;  
+        text-align: center;  
+        font-size: 30px;
+        padding-bottom: 20px;
+    }
+    .promisecontainer_2>img{
+        display: none;
+    }
+    .promisecontent2{
+        font-size: 16px;
+        position: relative;
+        left: 60px;
+    }
+    .promisecontent2>img{
+        width: 30px;
+        position: relative;
+        left: -40px;
+        top: 32px;
+    }
+    .promisecontainer_3{
+        width: 100%;
+        height: auto;
+        position: relative;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .promisecontainer_3 h2{
+        padding-top: 30px;  
+        text-align: center;  
+        font-size: 30px;
+    }
+    .promisecontainer_3 img{
+        display: none;
+    }
+    .promisecontentleft{
+        margin-left: 10px;
+    }
+    .promisecontent3{
+        font-size: 16px;
+        position: relative;
+        margin-top: 20px;
+        line-height: 15px;
+        font-weight: 700;
+    }
+    .bluecolor{
+        color: #4faac5;
+        font-size: 13px;
+        line-height: 20px;
+    }
+    .promisecontent_container_2{
+        width: 80%;
+        height: auto;
+        margin-top: 10px;
+        padding-bottom: 0px;
+        display: block;
+        margin-left: 20px;
+    }
+    .promisecontentleft{
+        margin-left: 0px;
+    }
+    .promisecontentleft>.promisecontent3{
+        margin-bottom: 10px;
+    }
+    .subsection{
+        position: relative;
+        margin-top: 30px;
+    }
+    .letter{
+        max-width: 100%;
+        height: 700px;
+        position: relative;
+        margin-left: auto;
+        margin-right: auto;
+        margin-bottom: 60px;
+        overflow: hidden;
+    }
+    .title1{
+        font-size: 2em;
+        font-weight: 800;
+        font-family: serif;
+        margin-bottom: 15px;
+    }
+    .letterright{
+        height: 900px;
+        position: relative;
+        top: -550px;
+        left: 0px;
+        font-size: 13px;
+        text-align: center;
+        line-height: 20px;
+        font-weight: 500;
+        font-family: 'Noto Sans KR', sans-serif;
+        font-weight: 400;
+        color: aliceblue;
+        letter-spacing: 0.2em;
+    }
+    .img2{
+        display: block;
+        max-width: 100%;
+        position: relative;
+        top: 50px;
+    }
+    .img1{
+        display: none;
+    }
+
+    .subsection iframe{
+        width: 100%;
+        height: 280px;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 30px;
+    }
+    .letterright img{
+        max-width: 50%;
+        position: relative;
+        top: 90px;
+        left: 80px;
+    }
+    .sponsor{
+        max-width: 100%;
+        height: 300px;
+        background-color: #cd2a2a;
+        margin-top: 250px;
+        display: block;
+        position: relative;
+        text-align: center;
+        font-family: 'Noto Sans KR', sans-serif;
+        letter-spacing: 0.1em;
+        
+    }
+    .sponsorcontent h2{
+        font-size: 1.2rem;
+        margin-bottom: 20px;
+    }
+    .address{
+        font-size: 0.6em;
+    }
+    .sponsorsub{
+        font-size: 10px;
+        position: relative;
+        left: 0px;
+        top: 0px;
+    }
+    .sponsor img{
+        max-width: 100%;
+        position: relative;
+        display: block;
+        left: 0px;
+        bottom: 220px;
+        z-index: -1;
+    }
+    .sponsorcontent{
+        top: -250px;
+    }
+}
+
+.mainimg{
+    max-width: 100%;
+}
+@media screen and (max-width:390px) {
+    .wrapper{
+        width: 100%;
+        height: auto;
+        overflow: hidden;
+    }
+    .main{
+        max-width: 100%;
+        height: 760px;
+        background-image: url(img/background1.jpg);
+        background-size: 100% auto;
+    }
+    .mainnav{
+        width: 100%;
+        height: auto; 
+        flex-direction: column;
+        align-items: flex-start;
+        position: relative;
+    }
+    .mainlogo img{
+        width: 100px;
+        margin-top: 20px;
+        margin-left: 10px;
+    }
+    .mainright>.mainbutton{
+        width: 20%;
+        height: 25px;
+        position: relative;
+        top: -34px;
+        right: 110px;
+        font-size: 12px;
+    }
+    .logocontainer{
+        width: 102%;
+        height: 80px;
+        background-color: #cd2a2a;
+        position: fixed;
+        bottom: 0px;
+        left: -4px;
+        display: flex;
+        justify-content: space-around;
+    }
+    .logocontainer img{
+        width: 40px;
+        margin: 20px;
+    }
+    .flex-container{
+        position: relative;
+        left: 0px;
+        text-align: center;
+    }
+    .descin{
+        width: 100%;
+        font-size: 30px;
+        position: relative;
+        margin-left: auto;
+        margin-right: auto;
+        top: -100px;
+    }
+
+    .adverb{
+        font-size: 40px;
+        position: relative;
+        right: 100px;
+        top: -10px;
+    }
+    
+    .promisecontainer h2{
+        padding-top: 100px;  
+        text-align: center;  
+        font-size: 28px;
+        padding-bottom: 30px;
+    }
+    .promisecontent_container{
+        width: 100%;
+        margin-top: 0px;
+    }
+    .promisecontent{
+        font-size: 16px;
+        position: relative;
+        left: 10px;
+        margin-top: -10px;
+    }
+    .promisecontainer>img{
+        display: none;
+    }
+    .promisecontent:first-child img{
+        display: block;
+        width: 30px;
+        position: relative;
+        left: -40px;
+        top: 35px;
+    }
+    .promisecontent:nth-child(2) img{
+        display: block;
+        width: 30px;
+        position: relative;
+        left: -40px;
+        top: 35px;
+    }
+    .promisecontent:nth-child(3) img{
+        display: block;
+        width: 30px;
+        position: relative;
+        left: -40px;
+        top: 35px;
+    }
+    .promisecontent:nth-child(4) img{
+        display: block;
+        width: 30px;
+        position: relative;
+        left: -40px;
+        top: 35px;
+    }
+    .promisecontent:nth-child(5) img{
+        display: block;
+        width: 30px;
+        position: relative;
+        left: -40px;
+        top: 35px;
+    }.promisecontent:nth-child(6) img{
+        display: block;
+        width: 30px;
+        position: relative;
+        left: -40px;
+        top: 35px;
+    }
+    .promisecontent span{
+        display: block;
+        line-height: 16px;
+    }
+    .promisecontainer_2{
+        width: 100%;
+        height: auto;
+        position: relative;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 30px;
+    }
+    .promisecontainer_2 h2{
+        padding-top: 30px;  
+        text-align: center;  
+        font-size: 30px;
+        padding-bottom: 20px;
+    }
+    .promisecontainer_2>img{
+        display: none;
+    }
+    .promisecontent2{
+        font-size: 14px;
+        position: relative;
+        left: 60px;
+    }
+    .promisecontent2>img{
+        width: 30px;
+        position: relative;
+        left: -40px;
+        top: 32px;
+    }
+    .promisecontainer_3{
+        width: 100%;
+        height: auto;
+        position: relative;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .promisecontainer_3 h2{
+        padding-top: 30px;  
+        text-align: center;  
+        font-size: 30px;
+    }
+    .promisecontainer_3 img{
+        display: none;
+    }
+    .promisecontentleft{
+        margin-left: 10px;
+    }
+    .promisecontent3{
+        font-size: 16px;
+        position: relative;
+        margin-top: 20px;
+        line-height: 15px;
+    }
+    .bluecolor{
+        color: #4faac5;
+        font-size: 13px;
+        line-height: 20px;
+    }
+    .promisecontent_container_2{
+        width: 80%;
+        height: auto;
+        margin-top: 10px;
+        padding-bottom: 0px;
+        display: block;
+        margin-left: 20px;
+    }
+    .promisecontentleft{
+        margin-left: 0px;
+    }
+    .promisecontentleft>.promisecontent3{
+        margin-bottom: 10px;
+    }
+    .subsection{
+        width: 100%;
+        height: 1000px;
+        position: relative;
+        margin-top: 30px;
+        margin-bottom: 80px;
+    }
+    .letter{
+        max-width: 100%;
+        height: 700px;
+        position: relative;
+        margin-left: auto;
+        margin-right: auto;
+        margin-bottom: 60px;
+        overflow: hidden;
+    }
+    .title1{
+        font-size: 2.5em;
+        font-weight: 800;
+        font-family: serif;
+        margin-bottom: 15px;
+    }
+    .letterright{
+        height: 500px;
+        position: relative;
+        top: -520px;
+        left: 0px;
+        text-align: center;
+        line-height: 1.4em;
+        font-weight: 500;
+        font-family: 'Noto Sans KR', sans-serif;
+        font-weight: 500;
+    }
+    .letter>img{
+        max-width: 100%;
+        box-sizing: border-box;
+        position: relative;
+    }
+    .subsection iframe{
+        width: 100%;
+        height: 280px;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 30px;
+    }
+    .letterright img{
+        max-width: 50%;
+        position: relative;
+        top: 80px;
+        right: -70px;
+    }
+    .sponsor{
+        max-width: 100%;
+        height: 280px;
+        background-color: #cd2a2a;
+        margin-top: 350px;
+        display: block;
+        position: relative;
+        text-align: center;
+        font-family: 'Noto Sans KR', sans-serif;
+        
+    }
+    .sponsorcontent h2{
+        font-size: 1.2rem;
+        margin-bottom: 20px;
+    }
+    .address{
+        font-size: 0.6em;
+    }
+    .sponsorsub{
+        font-size: 10px;
+        position: relative;
+        left: 0px;
+        top: 0px;
+    }
+    .sponsor img{
+        max-width: 100%;
+        position: relative;
+        display: block;
+        left: 0px;
+        bottom: 220px;
+        z-index: -1;
+    }
+    .sponsorcontent{
+        top: -250px;
+    }
+    .mainimg{
+        max-width: 100%;
+    }
+    @media screen and (max-width:376px){
+        .letter{
+            max-width: 100%;
+            height: 700px;
+            position: relative;
+            margin-left: auto;
+            margin-right: auto;
+            margin-bottom: 60px;
+            overflow: hidden;
+        }
+        .letterright{
+            height: 500px;
+            position: relative;
+            top: -500px;
+            left: 0px;
+            font-size: 12px;
+            text-align: center;
+            line-height: 1.5em;
+            font-weight: 500;
+            font-family: 'Noto Sans KR', sans-serif;
+            font-weight: 500;
+            letter-spacing: 0.2em;
+        }
+        .title1{
+            font-size: 3em;
+            font-weight: 800;
+            font-family: serif;
+            margin-bottom: 15px;
+        }
+        .mainimg{
+            max-width: 100%;
+        }
+    }
+    .mainimg{
+        width: 100%;
+    }
+    .mainimg img{
+        width: 100%;
+    }
+    @media screen and (max-width:360px){
+        .wrapper{
+            width: 100%;
+            height: auto;
+            overflow: hidden;
+        }
+        .mainright>.mainbutton{
+            width: 20%;
+            height: 25px;
+            position: relative;
+            top: -34px;
+            right: 0px;
+            left: 220px;
+            font-size: 12px;
+        }
+        .descin{
+            width: 100%;
+            font-size: 28px;
+            position: relative;
+            margin-left: auto;
+            margin-right: auto;
+            top: -100px;
+        }
+        .promisecontent2{
+            font-size: 13px;
+            position: relative;
+            left: 60px;
+        }
+        .bluecolor{
+            color: #4faac5;
+            font-size: 12px;
+            line-height: 20px;
+        }
+        .title1{
+            font-size: 2.0em;
+            font-weight: 800;
+            font-family: serif;
+            margin-bottom: 15px;
+        }
+        .letterright{
+            height: 500px;
+            position: relative;
+            top: -490px;
+            left: 0px;
+            text-align: center;
+            line-height: 1.4em;
+            font-weight: 500;
+            font-family: 'Noto Sans KR', sans-serif;
+            font-weight: 500;
+            font-size: 13px;
+        }
+        .sponsorcontent{
+            top: -240px;
+        }
+        .mainimg{
+            max-width: 100%;
+        }
+    }
+}
+
